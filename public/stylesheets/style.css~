@@ -1,0 +1,95 @@
+html{
+	position: relative;
+}
+	body{
+		position: relative;
+		margin:0px;
+		padding:10px;
+		min-width:800px;
+	}
+		.wrapper{
+			vertical-align:top;
+			display:inline-block;
+			width:49%;
+		}
+		.dialog{
+			margin-bottom:20px;
+
+			position:relative;
+			max-width:300px;
+		}
+			.triangle{
+				width:0px;
+				height:0px;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-right: 10px solid blue;
+				display:inline-block;
+				position:absolute;
+				top:18px;
+				left:-10px;
+			}
+			span{
+				display:inline-block;
+				border:1px solid blue;
+				border-radius:3px;
+				padding: 0px 5px;
+			}
+		.field_wrapper{
+			height:100px;
+			position:relative;
+			width:200px;
+		}
+		.label{
+			border-bottom: 1px solid green;
+			width: 200px;
+			outline-width: 0;/*removes outline for osx users*/
+			border-radius: 5px;
+		}
+		.label:before{
+			border-radius:5px;
+			position:absolute;
+			content:"";
+			left:50%;
+			right:50%;
+			border-bottom:2px solid red;
+			height:18px;
+			transition: .4s ease;
+			-webkit-transition-property: left, right;
+		}
+		.label:focus:before{
+			left:0px;
+			right:0px;
+		}
+			label{
+				position:absolute;
+				color: green;
+				display:block;
+			}
+			.label_down{
+				visibility: hidden;
+				transition: .4s linear;
+				top:0px;
+				z-index:0;
+				position:absolute;
+			}
+			.label_up{
+				visibility: visible;
+				display:block;
+				transition: .2s linear;
+				top: -18px;
+				z-index:1;
+				font-size:13px;
+			}
+			.required_field{
+				color: red;
+			}
+			.normal_field{
+				color: black;
+			}
+			.label_top{
+				visibility: visible;
+				top:-18px;
+				z-index:1;
+				transition: .2s linear;
+			}

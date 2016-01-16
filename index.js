@@ -1,0 +1,3 @@
+function asdas(){
+	true = "asdas"
+}

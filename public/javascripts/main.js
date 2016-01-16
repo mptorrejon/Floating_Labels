@@ -1,0 +1,39 @@
+var FL = angular.module('FL', []);
+FL.controller('fl_controller', function($scope){});
+FL.directive('floatLabel', function(){
+	return{
+		scope: { move: '@' },
+		restrict: 'A',
+		link: function(scope, elem, attr){
+			elem.bind('focus', function(){
+				if(scope.move == "true"){
+					//remove text
+					elem[0].innerText = "";
+					//toggle classes for label to show up
+					$(elem[0].nextElementSibling).removeClass("label_down").addClass("label_up");
+					//makes field content editable
+					//$(elem[0]).attr('contenteditable', 'true');
+				}
+				//restores font if '*Required Field' has been placed
+				$(elem[0]).removeClass("required_field").addClass("normal_field");
+				scope.selectText(this);
+			});
+			//clicked anywhere else but the field
+			elem.bind('blur', function(){
+				if( elem[0].innerText == "" ){
+					$(elem[0]).removeClass("normal_field").addClass("required_field");
+					elem[0].innerText = "*This field is required";
+				}
+			});
+		},
+		controller: function($scope){
+			$scope.selectText = function(element){
+				var selection = window.getSelection();        
+				var range = document.createRange();
+				range.selectNodeContents(element);
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		}
+	}
+});
