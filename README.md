@@ -7,6 +7,6 @@ This shows two different ways of how floating labels can be used.
 
 Im also implementing a way to select entire text or only edit a part of it.
 
-I hope this helps anyone and if it does, make good of it.
+I hope this helps anyone and if it does, make good use of it.
 
 -MT
