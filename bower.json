@@ -1,0 +1,18 @@
+{
+	"name": "mtorrejon",
+	"version": "0.0.1",
+	"description": Angular Direcitve",
+	"private": false,
+	"ignore": [
+		"node_modules",
+		"bower_components",
+	],	
+	"dependencies": {
+		"jquery": "~2.1.3",
+		"angular": "~1.3.15"
+	},
+	"resolutions":{
+		"angular": "~1.3.15",
+		"jquery": "~2"
+	}
+}
