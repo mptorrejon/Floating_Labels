@@ -1,0 +1,11 @@
+{
+	"name": "Floating-Labels",
+	"version":"0.0.1",
+	"description": "mtorrejon - usage of labels on fields for a more dynamic use",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/mptorrejon/Floating_Labels.git"
+	},
+	"author": "mtorrejon",
+	"homepage": "www.mtorrejon.com"
+}
