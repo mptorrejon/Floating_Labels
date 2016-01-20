@@ -1,3 +1,4 @@
+//controller for app -- travis test
 var FL = angular.module('FL', []);
 FL.controller('fl_controller', function($scope){});
 FL.directive('floatLabel', function(){
