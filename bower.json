@@ -1,7 +1,7 @@
 {
 	"name": "mtorrejon",
 	"version": "0.0.1",
-	"description": Angular Direcitve",
+	"description": "Angular Direcitve",
 	"private": false,
 	"ignore": [
 		"node_modules",
