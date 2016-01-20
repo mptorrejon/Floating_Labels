@@ -2,6 +2,9 @@ language: node_js
 node_js:
   - 0.10
 
+sudo:
+	required
+
 before_script:
   - npm install -g karma-cli
   - export DISPLAY=:99.0
