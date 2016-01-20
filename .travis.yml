@@ -6,7 +6,6 @@ node_js:
 sudo: required
 
 before_script:
-	- echo 'angular.module("SMSApp").constant("APP_ENV", {"loginRequired":false,"authClient":"http://oauthclient.gosms.io/","api":"http://localhost:3000/"}).constant("VERSION", "0.4.0");' > assets/js/config/config.js
     - npm install -g karma-cli
     - export NODE_ENV='development'
     - export DISPLAY=:99.0
